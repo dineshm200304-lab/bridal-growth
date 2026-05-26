@@ -47,11 +47,6 @@
             background-color: #FAF7F2;
             color: #4A4A4A;
             -webkit-font-smoothing: antialiased;
-            /* Padding bottom for mobile sticky CTA */
-            padding-bottom: 80px; 
-        }
-        @media (min-width: 768px) {
-            body { padding-bottom: 0; }
         }
         
         .border-dashed-custom {
@@ -62,12 +57,12 @@
 <body class="font-sans text-luxury-text relative overflow-x-hidden bg-white">
 
     <!-- Top Alert Bar -->
-    <div class="bg-[#1A1818] text-white text-center py-2.5 px-3 text-[11px] sm:text-[13px] md:text-sm font-bold tracking-wide uppercase w-full z-50 relative leading-[1.4]">
-        BRIDAL LEADS INTO BOOKINGS 1:1 STRATEGY SESSION - ONLY ₹37 (LIMITED TIME)
+    <div class="bg-[#1A1818] text-white text-center py-2.5 px-3 text-[11px] sm:text-[13px] md:text-sm font-bold tracking-wide uppercase w-full z-50 relative leading-[1.5]">
+        BRIDAL LEADS INTO BOOKINGS 1:1 STRATEGY SESSION - <br class="sm:hidden" /> ONLY ₹37 (LIMITED TIME)
     </div>
 
     <!-- Floating WhatsApp Button -->
-    <a href="#" class="fixed bottom-24 md:bottom-8 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300" aria-label="WhatsApp Us">
+    <a href="#" class="fixed bottom-6 md:bottom-8 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300" aria-label="WhatsApp Us">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
 
@@ -79,7 +74,7 @@
                 ONLY 3 SLOTS AVAILABLE THIS WEEK
             </div>
             
-            <h1 data-aos="fade-up" data-aos-delay="100" class="font-sans text-[25px] min-[375px]:text-[28px] sm:text-[42px] md:text-6xl font-black leading-[1.1] text-[#111] uppercase tracking-tight mb-4">
+            <h1 data-aos="fade-up" data-aos-delay="100" class="font-sans text-[26px] min-[375px]:text-[28px] sm:text-[42px] md:text-6xl font-black leading-[1.1] text-[#111] uppercase tracking-tight mb-4">
                 GET THE EXACT<br>
                 BLUEPRINT TO<br>
                 <span class="text-[#459A21]">CONVERT BRIDAL<br>
@@ -88,12 +83,12 @@
                 NEXT 7 DAYS
             </h1>
             
-            <p data-aos="fade-up" data-aos-delay="200" class="text-[14px] min-[375px]:text-[16px] md:text-2xl font-bold text-[#111] mb-5 max-w-2xl mx-auto leading-snug px-1">
-                (Without Relying On Price Shoppers, Random Follow-Ups, Or Increasing Your Ad Budget)
+            <p data-aos="fade-up" data-aos-delay="200" class="text-[14px] min-[375px]:text-[15px] md:text-2xl font-bold text-[#111] mb-5 max-w-2xl mx-auto leading-snug px-2">
+                (Without Relying On Price Shoppers, Random <br class="md:hidden" /> Follow-Ups, Or Increasing Your Ad Budget)
             </p>
             
-            <div data-aos="zoom-in" data-aos-delay="300" class="flex items-end justify-center gap-2 sm:gap-4 mb-5">
-                <span class="text-[28px] sm:text-5xl text-[#999] line-through font-black leading-none mb-1 md:mb-2">₹37,000</span>
+            <div data-aos="zoom-in" data-aos-delay="300" class="flex items-center justify-center gap-3 sm:gap-4 mb-5">
+                <span class="text-[28px] sm:text-5xl text-[#999] line-through font-black leading-none mt-2">₹37,000</span>
                 <span class="text-[56px] sm:text-[64px] md:text-[5.5rem] text-[#D92D20] font-black leading-none tracking-tighter">₹37</span>
             </div>
             
@@ -101,7 +96,7 @@
                 <a href="#booking-form" class="block w-full max-w-[340px] sm:max-w-[400px] mx-auto bg-[#52A321] text-white px-2 py-3.5 sm:py-5 text-[20px] sm:text-[24px] md:text-3xl font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all mb-2">
                     BOOK YOUR SLOT NOW
                 </a>
-                <p class="text-[12px] sm:text-base text-gray-500 font-bold mb-2">
+                <p class="text-[12px] sm:text-base text-gray-500 font-bold mb-2 leading-tight">
                     (Get for ₹37 what has cost other bridal brands <br class="sm:hidden"> lakhs to figure out)
                 </p>
             </div>
@@ -480,22 +475,6 @@
             </p>
         </div>
     </footer>
-
-    <!-- Mobile Sticky CTA -->
-    <style>
-        @media (max-width: 767px) {
-            .mobile-sticky-cta { display: flex !important; }
-        }
-    </style>
-    <div class="hidden mobile-sticky-cta fixed bottom-0 left-0 w-full bg-white border-t-[3px] border-gray-200 p-3 z-40 justify-between items-center shadow-[0_-10px_20px_rgba(0,0,0,0.05)]">
-        <div>
-            <p class="text-[#111] font-black uppercase text-[13px] leading-tight mb-0.5">Scale Your Brand</p>
-            <p class="text-red-600 font-bold text-[11px] uppercase leading-tight">Only ₹37 Today</p>
-        </div>
-        <a href="#booking-form" class="bg-[#52A321] text-white px-5 py-2.5 rounded-sm font-black uppercase text-xs shadow-[0_3px_0_#387A13] active:translate-y-1 active:shadow-none transition-all">
-            START NOW
-        </a>
-    </div>
 
     <!-- AOS Animation Init -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
