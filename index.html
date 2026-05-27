@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridal Scaling Systems | Predictable Revenue for Bridal Brands</title>
+    <title>Bridal Scaling Systems | Fill Your Muhurtham Calendar with Premium Brides</title>
     
     <!-- Fonts: Playfair Display (Luxury Serif) & Inter (Clean Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
     
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -25,12 +25,13 @@
                 extend: {
                     colors: {
                         luxury: {
-                            dark: '#1A1818',
-                            light: '#FAF7F2',
-                            gold: '#C5A880',
-                            goldhover: '#B0956E',
-                            surface: '#FFFFFF',
-                            text: '#4A4A4A'
+                            dark: '#0A0A0C',     // Matte obsidian black
+                            medium: '#121216',   // Warm studio dark gray
+                            card: '#16161C',     // Premium container dark
+                            gold: '#EAB308',     // True dynamic gold accent
+                            goldhover: '#CA8A04',
+                            border: '#24242D',   // Elegant thin dark border
+                            textLight: '#F3F4F6' // Crisp near-white reading text
                         }
                     },
                     fontFamily: {
@@ -42,234 +43,310 @@
         }
     </script>
     <style>
-        /* Custom Utilities */
+        /* Custom Utilities for Dark Luxury Aesthetic */
         body {
-            background-color: #FAF7F2;
-            color: #4A4A4A;
+            background-color: #0A0A0C;
+            color: #F3F4F6;
             -webkit-font-smoothing: antialiased;
         }
         
         .border-dashed-custom {
-            border-bottom: 2px dashed #e5e7eb;
+            border-bottom: 2px dashed #24242D;
+        }
+
+        /* Glassmorphic overlay cards */
+        .glass-panel {
+            background: rgba(22, 22, 28, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(234, 179, 8, 0.1);
         }
     </style>
 </head>
-<body class="font-sans text-luxury-text relative overflow-x-hidden bg-white">
+<body class="font-sans relative overflow-x-hidden">
 
-    <!-- Top Alert Bar -->
-    <div class="bg-[#1A1818] text-white text-center py-2.5 px-3 text-[11px] sm:text-[13px] md:text-sm font-bold tracking-wide uppercase w-full z-50 relative leading-[1.5]">
-        BRIDAL LEADS INTO BOOKINGS 1:1 STRATEGY SESSION - <br class="sm:hidden" /> ONLY ₹37 (LIMITED TIME)
+    <!-- Top Announcement Alert Bar (Dynamic Gold Theme) -->
+    <div class="bg-[#111115] text-[#EAB308] text-center py-2.5 px-3 text-[11px] sm:text-[13px] md:text-sm font-black tracking-widest uppercase w-full z-50 relative leading-[1.5] border-b border-yellow-500/20">
+        FOR ESTABLISHED BRIDAL MUAs & STUDIOS LOOKING TO SCALE TO ₹10L+ IN PREMIUM BOOKINGS - ONLY 3 SEATS LEFT FOR THIS WEEK
     </div>
 
-    <!-- Hero Section -->
-    <header class="relative flex flex-col items-center justify-start pt-6 pb-10 bg-white text-center">
-        <div class="w-full px-3 mx-auto max-w-4xl">
+    <!-- PREMIUM DARK THEME HERO SECTION (TEXT-ONLY MOBILE OPTIMIZED POWERHOUSE) -->
+    <header class="relative bg-[#0A0A0C] text-white border-b border-[#24242D] overflow-hidden pt-8 pb-12">
+        
+        <!-- Grid & Glowing Ambiance Backdrop -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiLz48L3N2Zz4=')] opacity-50 z-0"></div>
+        <div class="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-[#EAB308] rounded-full blur-[140px] opacity-10 pointer-events-none z-0 transform -translate-y-1/2 -translate-x-1/2"></div>
+        
+        <!-- Main Hero Content -->
+        <div class="container mx-auto px-4 relative z-20 text-center max-w-3xl">
             
-            <div data-aos="fade-down" class="inline-block bg-[#FFD700] text-black px-4 py-1.5 font-black text-[11px] sm:text-sm tracking-wide uppercase mb-5">
+            <!-- Scarcity Tagline -->
+            <div data-aos="fade-down" class="inline-block bg-[#EAB308] text-black px-4 py-1.5 font-black text-[11px] sm:text-xs tracking-widest uppercase mb-6 rounded-sm">
                 ONLY 3 SLOTS AVAILABLE THIS WEEK
             </div>
             
-            <h1 data-aos="fade-up" data-aos-delay="100" class="font-sans text-[22px] min-[375px]:text-[24px] sm:text-[42px] md:text-6xl font-black leading-[1.1] text-[#111] uppercase tracking-tight mb-4">
-                GET THE EXACT BLUEPRINT TO<br>
-                <span class="text-[#459A21]">CONVERT BRIDAL LEADS<br>
-                INTO PREMIUM BOOKINGS</span><br>
-                IN THE NEXT 7 DAYS
+            <!-- Headline (Perfect Mobile Alignment with Requested Text Structure) -->
+            <h1 data-aos="fade-up" class="font-sans text-[23px] min-[375px]:text-[25px] sm:text-[40px] md:text-[50px] font-black leading-[1.15] text-white uppercase tracking-tight mb-6">
+                TAP HIGH-PAYING<br>
+                <span class="text-[#EAB308]">BRIDAL LEADS</span><br>
+                AND CONVERT WITHIN<br>
+                <span class="text-[#52A321]">24 HOURS</span> WITH OUR<br>
+                CONVERSION FUNNEL
             </h1>
             
-            <p data-aos="fade-up" data-aos-delay="200" class="text-[14px] min-[375px]:text-[15px] md:text-2xl font-bold text-[#111] mb-5 max-w-2xl mx-auto leading-snug px-2">
-                (Without Relying On Price Shoppers, Random <br class="md:hidden" /> Follow-Ups, Or Increasing Your Ad Budget)
-            </p>
-            
-            <div data-aos="zoom-in" data-aos-delay="300" class="flex items-center justify-center gap-3 sm:gap-4 mb-5">
-                <span class="text-[28px] sm:text-5xl text-[#999] line-through font-black leading-none mt-2">₹37,000</span>
-                <span class="text-[56px] sm:text-[64px] md:text-[5.5rem] text-[#D92D20] font-black leading-none tracking-tighter">₹37</span>
+            <!-- Bullet points (Left-aligned within a centered desktop container) -->
+            <div data-aos="fade-up" data-aos-delay="100" class="max-w-xl mx-auto text-left mb-8 space-y-4">
+                <div class="flex items-start">
+                    <i class="far fa-check-square text-[#EAB308] mt-1 mr-3 text-base md:text-lg shrink-0"></i>
+                    <p class="text-gray-300 font-semibold text-xs md:text-base leading-snug">Stop relying on random Instagram Reels. Lock in booking advances predictably.</p>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-filter text-[#EAB308] mt-1 mr-3 text-base md:text-lg shrink-0"></i>
+                    <p class="text-gray-300 font-semibold text-xs md:text-base leading-snug">Filter out casual price shoppers in DMs. Protect your booking calendar rates.</p>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-bullseye text-[#EAB308] mt-1 mr-3 text-base md:text-lg shrink-0"></i>
+                    <p class="text-gray-300 font-semibold text-xs md:text-base leading-snug">Build a conversion engine designed exclusively for high-ticket Chennai, Coimbatore, & TN brides.</p>
+                </div>
             </div>
             
-            <div data-aos="zoom-in" data-aos-delay="400" class="flex flex-col items-center justify-center w-full px-2">
-                <a href="#booking-form" class="block w-full max-w-[340px] sm:max-w-[400px] mx-auto bg-[#52A321] text-white px-2 py-3.5 sm:py-5 text-[20px] sm:text-[24px] md:text-3xl font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all mb-2">
+            <!-- Pricing Block (Perfect Mobile Sizing Stack) -->
+            <div data-aos="zoom-in" data-aos-delay="200" class="flex items-end justify-center gap-2 sm:gap-4 mb-6">
+                <span class="text-[26px] sm:text-4xl text-gray-500 line-through font-black leading-none mb-1">₹37,000</span>
+                <span class="text-[52px] sm:text-[64px] text-white font-black leading-none tracking-tighter">ONLY ₹37</span>
+            </div>
+            
+            <!-- Centralized Booking Button -->
+            <div data-aos="zoom-in" data-aos-delay="300" class="flex flex-col items-center justify-center w-full px-1 mb-8">
+                <a href="#booking-form" class="block w-full max-w-[340px] sm:max-w-[380px] bg-[#52A321] text-white py-3.5 sm:py-4.5 text-[18px] sm:text-[22px] font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all mb-2.5 tracking-wider">
                     BOOK YOUR SLOT NOW
                 </a>
-                <p class="text-[12px] sm:text-base text-gray-500 font-bold mb-2 leading-tight">
-                    (Get for ₹37 what has cost other bridal brands <br class="sm:hidden"> lakhs to figure out)
+                <p class="text-[11px] sm:text-xs text-gray-400 font-bold leading-tight">
+                    (Get for ₹37 what has cost other bridal brands lakhs to figure out)
                 </p>
+            </div>
+            
+            <!-- Scarcity Warning Area -->
+            <div data-aos="fade-up" data-aos-delay="400" class="border border-[#24242D] bg-[#121216] rounded p-4 max-w-md mx-auto text-center">
+                <h3 class="font-black text-sm text-[#EAB308] uppercase tracking-wider mb-1">SCARCITY HOOK ACTIVATED: Only 3 Seats Left!</h3>
+                <p class="text-[11px] text-gray-400 font-bold uppercase leading-snug">1-on-1 Business Diagnosis slots are highly limited this wedding season.</p>
             </div>
             
         </div>
     </header>
 
-    <!-- Problem Awareness -->
-    <section class="py-12 md:py-20 bg-[#FAFAFA]" id="problems">
+    <!-- Problem Awareness Section -->
+    <section class="py-16 md:py-24 bg-[#0F0F12]" id="problems">
         <div class="container mx-auto px-4 max-w-4xl">
-            <div class="bg-white border border-gray-200 p-6 md:p-12 shadow-sm" data-aos="fade-up">
-                <h2 class="font-sans text-2xl md:text-4xl font-black uppercase text-[#111] leading-[1.15] mb-6 tracking-tight">
-                    YOU DON'T NEED MORE INQUIRIES. YOU NEED A BETTER SYSTEM TO CONVERT THE ONES YOU ALREADY HAVE.
+            <div class="bg-[#16161C] border border-[#24242D] p-6 md:p-12 shadow-2xl" data-aos="fade-up">
+                
+                <h2 class="font-sans text-2xl md:text-4xl font-black uppercase text-white leading-[1.15] mb-6 tracking-tight">
+                    YOU DON'T NEED "MORE LEADS." YOU NEED A SCIENTIFIC SYSTEM TO FILTER AND CONVERT THE INQUIRIES YOU ALREADY GET.
                 </h2>
-                <p class="font-bold text-base md:text-xl text-[#111] mb-5">
-                    Right now... you're probably:
+                
+                <p class="font-bold text-base md:text-lg text-gray-300 mb-5">
+                    As an established bridal artist or makeover studio, your days are likely spent:
                 </p>
-                <ul class="list-disc list-inside space-y-3 text-[#333] mb-10 font-medium text-sm md:text-lg ml-2 marker:text-black">
-                    <li>generating DMs and WhatsApp inquiries every week</li>
-                    <li>spending money on Meta ads or boosting your best reels</li>
-                    <li>sending your rate card and package details daily</li>
-                    <li>following up manually, only to get "I'll let you know"</li>
+                
+                <ul class="list-disc list-inside space-y-3 text-gray-300 mb-10 font-semibold text-sm md:text-base ml-2 marker:text-[#EAB308]">
+                    <li>Sifting through endless "Rate card please?" DMs on Instagram</li>
+                    <li>Spending massive budgets on boosting posts or generic Facebook ads</li>
+                    <li>Manually replying to cold wedding inquiries that never book a trial</li>
+                    <li>Watching dates on prime wedding months remain blank while rookies slash their prices</li>
                 </ul>
+
+                <!-- 2x2 Grid for Pain Points -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                    <div class="border border-gray-200 p-5 md:p-8">
-                        <h3 class="text-[#D92D20] font-bold text-base md:text-lg uppercase mb-2 tracking-wide">BRIDES GHOST AFTER PRICING</h3>
-                        <p class="text-[#111] text-xs md:text-base leading-relaxed">
-                            Even highly interested brides stop replying the exact moment you share your rate card or package PDF.
+                    
+                    <!-- Card 1 -->
+                    <div class="border border-[#24242D] p-5 md:p-8 bg-[#0A0A0C] hover:border-[#EAB308]/30 transition-all">
+                        <h3 class="text-[#EF4444] font-black text-sm md:text-base uppercase mb-2 tracking-wide flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#EF4444] rounded-full"></span>
+                            BRIDES GHOST AFTER PRICING
+                        </h3>
+                        <p class="text-gray-400 text-xs md:text-sm leading-relaxed">
+                            A bride loves your portfolio, asks for package details, but goes completely silent the exact second you send your rate card.
                         </p>
                     </div>
-                    <div class="border border-gray-200 p-5 md:p-8">
-                        <h3 class="text-[#D92D20] font-bold text-base md:text-lg uppercase mb-2 tracking-wide">CHEAP INQUIRIES, NOT PREMIUM CLIENTS</h3>
-                        <p class="text-[#111] text-xs md:text-base leading-relaxed">
-                            You attract brides who only care about getting a discount, rather than valuing the quality of your portfolio and work.
+
+                    <!-- Card 2 -->
+                    <div class="border border-[#24242D] p-5 md:p-8 bg-[#0A0A0C] hover:border-[#EAB308]/30 transition-all">
+                        <h3 class="text-[#EF4444] font-black text-sm md:text-base uppercase mb-2 tracking-wide flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#EF4444] rounded-full"></span>
+                            THE "₹5K BUDGET" PROBLEM
+                        </h3>
+                        <p class="text-gray-400 text-xs md:text-sm leading-relaxed">
+                            Your makeup skills are premium, but your inbox is flooded with bargain hunters who compare your pricing with amateur local artists.
                         </p>
                     </div>
-                    <div class="border border-gray-200 p-5 md:p-8">
-                        <h3 class="text-[#D92D20] font-bold text-base md:text-lg uppercase mb-2 tracking-wide">FOLLOW-UPS FEEL DESPERATE</h3>
-                        <p class="text-[#111] text-xs md:text-base leading-relaxed">
-                            Manual chasing creates awkwardness. You send "Hi ma'am, any update?" and just get left on read.
+
+                    <!-- Card 3 -->
+                    <div class="border border-[#24242D] p-5 md:p-8 bg-[#0A0A0C] hover:border-[#EAB308]/30 transition-all">
+                        <h3 class="text-[#EF4444] font-black text-sm md:text-base uppercase mb-2 tracking-wide flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#EF4444] rounded-full"></span>
+                            FOLLOW-UPS FEEL DESPERATE
+                        </h3>
+                        <p class="text-gray-400 text-xs md:text-sm leading-relaxed">
+                            Without a system, you are forced to manual chase: "Hi Ma'am, did you check with your family?" which instantly lowers your brand authority.
                         </p>
                     </div>
-                    <div class="border border-gray-200 p-5 md:p-8">
-                        <h3 class="text-[#D92D20] font-bold text-base md:text-lg uppercase mb-2 tracking-wide">REELS GET VIEWS, NO ADVANCES</h3>
-                        <p class="text-[#111] text-xs md:text-base leading-relaxed">
-                            Your content gets likes, saves, and shares, but it doesn't translate into paid booking advances.
+
+                    <!-- Card 4 -->
+                    <div class="border border-[#24242D] p-5 md:p-8 bg-[#0A0A0C] hover:border-[#EAB308]/30 transition-all">
+                        <h3 class="text-[#EF4444] font-black text-sm md:text-base uppercase mb-2 tracking-wide flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-[#EF4444] rounded-full"></span>
+                            REELS GO VIRAL, CALENDAR stays EMPTY
+                        </h3>
+                        <p class="text-gray-400 text-xs md:text-sm leading-relaxed">
+                            You get thousands of likes and saves on your makeover transformation reels, but none of them translate to paid booking advances.
                         </p>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- The Real Problem -->
-    <section class="py-12 md:py-20 bg-[#F4F6F9]" id="real-problem">
+    <!-- The Real Problem Section -->
+    <section class="py-16 md:py-24 bg-[#0A0A0C]" id="real-problem">
         <div class="container mx-auto px-4 max-w-4xl text-center">
-            <div data-aos="fade-up" class="inline-block bg-[#3182CE] px-4 md:px-6 py-2 mb-6">
-                <h2 class="font-sans text-2xl md:text-5xl font-black text-white uppercase tracking-tight m-0 leading-none">THE REAL PROBLEM?</h2>
+            
+            <!-- Highlighted Title -->
+            <div data-aos="fade-up" class="inline-block bg-[#EAB308] px-5 py-2 mb-6">
+                <h2 class="font-sans text-xl md:text-3xl font-black text-[#0A0A0C] uppercase tracking-wider m-0 leading-none">THE REAL ROOT PROBLEM?</h2>
             </div>
-            <h3 data-aos="fade-up" class="font-sans text-xl md:text-3xl font-black text-[#111] leading-snug mb-6 capitalize px-2">
-                Most Bridal Makeup Brands Don't Have A Lead Generation Problem... <br class="hidden md:block"/> They Have A Lead Conversion Problem.
+            
+            <h3 data-aos="fade-up" class="font-sans text-xl md:text-3xl font-black text-white leading-snug mb-6 capitalize px-2 font-serif">
+                Your Business Doesn't Have a Traffic Issue... <br class="hidden md:block"/> It Has an Inquiry Conversion Leak.
             </h3>
-            <p data-aos="fade-up" class="text-sm md:text-lg text-[#333] mb-8 font-medium">
-                The money is not being lost while generating inquiries. It's being lost in the DMs after the lead comes in.
+            
+            <p data-aos="fade-up" class="text-sm md:text-base text-gray-300 mb-8 font-semibold max-w-2xl mx-auto">
+                Stop blaming the platform or the algorithms. High-net-worth brides are actively booking. The breakdown is happening inside your DM-to-booking sales flow.
             </p>
             
-            <div data-aos="zoom-in" class="bg-[#FFEAEA] border-[3px] border-[#E53E3E] p-6 md:p-12 max-w-3xl mx-auto text-center shadow-sm">
-                <h4 class="font-sans text-xl md:text-4xl font-black text-[#111] mb-6 tracking-tight leading-tight">
-                    Because There's No Proper Conversion Architecture
+            <!-- Red Warning Box -->
+            <div data-aos="zoom-in" class="bg-[#1F1212] border-[3px] border-[#EF4444]/60 p-6 md:p-12 max-w-3xl mx-auto text-center shadow-2xl">
+                <h4 class="font-sans text-lg md:text-2xl font-black text-[#FCA5A5] mb-6 tracking-tight leading-tight uppercase">
+                    Because There Is No Pre-Qualification & Nurturing Engine
                 </h4>
+                
                 <div class="inline-block text-left mb-6">
-                    <ul class="text-base md:text-xl text-[#111] font-bold space-y-3 md:space-y-4 list-disc marker:text-black pl-5">
-                        <li class="pl-1">no system to filter out bargain hunters</li>
-                        <li class="pl-1">no script to handle "your price is too high"</li>
-                        <li class="pl-1">no urgency structure to secure the advance</li>
-                        <li class="pl-1">no strategy to convert a DM into a confirmed bride</li>
+                    <ul class="text-xs md:text-base text-gray-200 font-bold space-y-3 list-disc marker:text-[#EF4444] pl-5">
+                        <li class="pl-1">No system to filter out low-budget price shoppers before they take your time</li>
+                        <li class="pl-1">No psychological script to justify a ₹30,000+ makeover rate over a ₹10,000 one</li>
+                        <li class="pl-1">No structured, highly authoritative follow-up mechanism</li>
+                        <li class="pl-1">No calendar urgency triggers that compel brides to pay their booking advances instantly</li>
                     </ul>
                 </div>
-                <p class="text-base md:text-xl font-bold text-[#111]">
-                    So even brides who love your work slowly disappear.
+                
+                <p class="text-sm md:text-lg font-black text-[#EF4444] uppercase tracking-wide">
+                    And so, thousands of rupees in potential wedding bookings leak out of your business every single week.
                 </p>
             </div>
+
         </div>
     </section>
 
-    <!-- The 3 Step System (Matched to Reference) -->
-    <section class="py-12 md:py-20 bg-white">
+    <!-- The 3 Step System Section -->
+    <section class="py-16 md:py-24 bg-[#0F0F12]">
         <div class="container mx-auto px-4 max-w-4xl text-center">
-            <h2 data-aos="fade-up" class="font-sans text-2xl md:text-4xl font-black uppercase text-[#111] leading-tight tracking-tight mb-8">
-                IN THIS 1:1 SESSION YOU'LL DISCOVER THE EXACT SYSTEM TO TURN EXISTING INQUIRIES INTO PREMIUM BOOKINGS WITHIN DAYS
+            <h2 data-aos="fade-up" class="font-sans text-xl md:text-3xl font-black uppercase text-white leading-snug tracking-tight mb-8 font-serif">
+                IN THIS 1:1 DIAGNOSIS SESSION, YOU'LL DISCOVER THE EXACT REVENUE SYSTEM THAT THE TOP 1% OF BRIDAL STUDIOS USE TO SECURE HIGH-TICKET BOOKINGS
             </h2>
             
-            <a href="#booking-form" data-aos="fade-up" class="inline-block w-full max-w-[300px] bg-[#52A321] text-white px-4 py-3 md:py-4 text-[16px] md:text-xl font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all mb-10">
-                LOCK MY ₹37 SLOT
+            <a href="#booking-form" data-aos="fade-up" class="inline-block w-full max-w-[320px] bg-[#52A321] hover:bg-[#438923] text-white px-4 py-3.5 md:py-4 text-[16px] md:text-lg font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all mb-12 tracking-wide">
+                LOCK MY ₹37 SLOT NOW
             </a>
             
             <div class="space-y-4 max-w-3xl mx-auto text-left" data-aos="fade-up">
                 <!-- Step 1 -->
-                <div class="border-[3px] border-[#E6F4EA] p-5 flex items-start gap-4 hover:border-[#52A321] transition-colors bg-white">
-                    <div class="bg-[#52A321] text-white w-10 h-10 min-w-[40px] rounded-full flex items-center justify-center font-black text-lg">01</div>
+                <div class="border border-[#24242D] p-6 flex items-start gap-4 hover:border-[#EAB308]/50 transition-all bg-[#16161C] shadow-lg">
+                    <div class="bg-[#52A321] text-white w-10 h-10 min-w-[40px] rounded-full flex items-center justify-center font-black text-lg shadow-[0_0_15px_rgba(82,163,33,0.3)]">01</div>
                     <div>
-                        <h4 class="font-black text-[#111] text-lg md:text-xl mb-1">The "Price-Shopper" Filter System</h4>
-                        <p class="text-sm md:text-base font-medium text-gray-700">How to instantly weed out bargain hunters and position your brand to command premium rates.</p>
+                        <h4 class="font-black text-white text-base md:text-lg mb-1 uppercase tracking-wide">The "Price-Shopper" Filter System</h4>
+                        <p class="text-xs md:text-sm font-semibold text-gray-400 leading-relaxed">How to automate your initial DM response sequence so bargain hunters are weeded out before you waste a single minute on manual typing.</p>
                     </div>
                 </div>
                 <!-- Step 2 -->
-                <div class="border-[3px] border-[#E6F4EA] p-5 flex items-start gap-4 hover:border-[#52A321] transition-colors bg-white">
-                    <div class="bg-[#52A321] text-white w-10 h-10 min-w-[40px] rounded-full flex items-center justify-center font-black text-lg">02</div>
+                <div class="border border-[#24242D] p-6 flex items-start gap-4 hover:border-[#EAB308]/50 transition-all bg-[#16161C] shadow-lg">
+                    <div class="bg-[#52A321] text-white w-10 h-10 min-w-[40px] rounded-full flex items-center justify-center font-black text-lg shadow-[0_0_15px_rgba(82,163,33,0.3)]">02</div>
                     <div>
-                        <h4 class="font-black text-[#111] text-lg md:text-xl mb-1">The DM-to-Advance Conversion Framework</h4>
-                        <p class="text-sm md:text-base font-medium text-gray-700">The exact psychological WhatsApp scripts to move a bride from "How much?" to paying the advance.</p>
+                        <h4 class="font-black text-white text-base md:text-lg mb-1 uppercase tracking-wide">The DM-to-Advance Conversion Framework</h4>
+                        <p class="text-xs md:text-sm font-semibold text-gray-400 leading-relaxed">The exact psychological WhatsApp scripts used to elevate your authority and position your art so brides happily pay your advance without asking for discounts.</p>
                     </div>
                 </div>
                 <!-- Step 3 -->
-                <div class="border-[3px] border-[#E6F4EA] p-5 flex items-start gap-4 hover:border-[#52A321] transition-colors bg-white">
-                    <div class="bg-[#52A321] text-white w-10 h-10 min-w-[40px] rounded-full flex items-center justify-center font-black text-lg">03</div>
+                <div class="border border-[#24242D] p-6 flex items-start gap-4 hover:border-[#EAB308]/50 transition-all bg-[#16161C] shadow-lg">
+                    <div class="bg-[#52A321] text-white w-10 h-10 min-w-[40px] rounded-full flex items-center justify-center font-black text-lg shadow-[0_0_15px_rgba(82,163,33,0.3)]">03</div>
                     <div>
-                        <h4 class="font-black text-[#111] text-lg md:text-xl mb-1">The Predictable Scaling Architecture</h4>
-                        <p class="text-sm md:text-base font-medium text-gray-700">How to stop relying on seasonal luck and build a consistent flow of high-ticket bridal bookings.</p>
+                        <h4 class="font-black text-white text-base md:text-lg mb-1 uppercase tracking-wide">The Scaling Tracker</h4>
+                        <p class="text-xs md:text-sm font-semibold text-gray-400 leading-relaxed">A specialized conversion diagnostic model to pinpoint the exact leakage blockages in your profile traffic, booking rate, and seasonal revenue.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Not For Everyone Box (Matched to Reference) -->
-    <section class="py-12 bg-[#F4F6F9]">
+    <!-- Not For Everyone Section -->
+    <section class="py-16 bg-[#0A0A0C]">
         <div class="container mx-auto px-4 max-w-4xl">
-            <div data-aos="zoom-in" class="bg-[#FFF5F5] border-[3px] border-[#E53E3E] p-1 shadow-sm">
-                <div class="bg-white border-2 border-[#FFEAEA] p-6 md:p-10">
-                    <h2 class="font-sans text-2xl md:text-4xl font-black uppercase text-[#D92D20] text-center tracking-tight mb-8">
-                        THIS SESSION IS NOT FOR EVERYONE
+            <div data-aos="zoom-in" class="bg-[#1C1212] border-[3px] border-[#EF4444]/40 p-1 shadow-2xl">
+                <div class="bg-[#121216] border border-[#24242D] p-5 md:p-10">
+                    <h2 class="font-sans text-xl md:text-3xl font-black uppercase text-[#EF4444] text-center tracking-tight mb-8">
+                        WARNING: THIS SESSION IS NOT FOR EVERYONE
                     </h2>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 relative">
                         <!-- Desktop Divider -->
-                        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 transform -translate-x-1/2"></div>
+                        <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-800/80 transform -translate-x-1/2"></div>
                         
                         <!-- Not For -->
-                        <div>
-                            <h3 class="font-black text-xl md:text-2xl text-[#111] mb-5">This Session is <br class="hidden md:block"/><span class="text-[#D92D20]">NOT For:</span></h3>
-                            <ul class="space-y-4">
+                        <div class="space-y-4">
+                            <h3 class="font-black text-lg md:text-xl text-white flex items-center gap-2 uppercase tracking-wide">
+                                <span class="text-[#EF4444]"><i class="fas fa-times-circle"></i></span>
+                                This Session is <span class="text-[#EF4444]">NOT</span> For:
+                            </h3>
+                            <ul class="space-y-3.5">
                                 <li class="flex items-start">
-                                    <i class="fas fa-times text-[#D92D20] mt-1 mr-3"></i>
-                                    <span class="text-sm md:text-base text-[#333] font-bold">Beginner MUAs with no portfolio or real bridal experience</span>
+                                    <i class="fas fa-times text-[#EF4444] mt-1 mr-2 text-xs"></i>
+                                    <span class="text-xs md:text-sm text-gray-300 font-bold">Beginner makeup artists with no real bridal experience or portfolio</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i class="fas fa-times text-[#D92D20] mt-1 mr-3"></i>
-                                    <span class="text-sm md:text-base text-[#333] font-bold">Artists who want to compete on being the "cheapest" in town</span>
+                                    <i class="fas fa-times text-[#EF4444] mt-1 mr-2 text-xs"></i>
+                                    <span class="text-xs md:text-sm text-gray-300 font-bold">MUAs looking to compete solely on being the cheapest option in the city</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i class="fas fa-times text-[#D92D20] mt-1 mr-3"></i>
-                                    <span class="text-sm md:text-base text-[#333] font-bold">Stuck in a "just boost reels" mindset</span>
+                                    <i class="fas fa-times text-[#EF4444] mt-1 mr-2 text-xs"></i>
+                                    <span class="text-xs md:text-sm text-gray-300 font-bold">People looking for "quick viral reel tricks" rather than building a real business system</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i class="fas fa-times text-[#D92D20] mt-1 mr-3"></i>
-                                    <span class="text-sm md:text-base text-[#333] font-bold">Those looking for magic tricks without building a real brand</span>
+                                    <i class="fas fa-times text-[#EF4444] mt-1 mr-2 text-xs"></i>
+                                    <span class="text-xs md:text-sm text-gray-300 font-bold">Artists who are afraid to invest in proper scaling systems and automation</span>
                                 </li>
                             </ul>
                         </div>
                         
                         <!-- Is For -->
-                        <div>
-                            <h3 class="font-black text-xl md:text-2xl text-[#111] mb-5">This Session <br class="hidden md:block"/><span class="text-[#52A321]">IS For:</span></h3>
-                            <ul class="space-y-4">
+                        <div class="space-y-4">
+                            <h3 class="font-black text-lg md:text-xl text-white flex items-center gap-2 uppercase tracking-wide">
+                                <span class="text-[#EAB308]"><i class="fas fa-check-circle"></i></span>
+                                This Session <span class="text-[#EAB308]">IS</span> For:
+                            </h3>
+                            <ul class="space-y-3.5">
                                 <li class="flex items-start">
-                                    <i class="fas fa-check text-[#52A321] mt-1 mr-3"></i>
-                                    <span class="text-sm md:text-base text-[#333] font-bold">Established Bridal MUAs / Studios with a solid portfolio</span>
+                                    <i class="fas fa-check text-[#EAB308] mt-1 mr-2 text-xs"></i>
+                                    <span class="text-xs md:text-sm text-gray-300 font-bold">Established bridal MUAs, makeover studios, and high-end salons</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i class="fas fa-check text-[#52A321] mt-1 mr-3"></i>
-                                    <span class="text-sm md:text-base text-[#333] font-bold">Artists already getting DMs, but struggling to close them</span>
+                                    <i class="fas fa-check text-[#EAB308] mt-1 mr-2 text-xs"></i>
+                                    <span class="text-xs md:text-sm text-gray-300 font-bold">Artists already getting organic traffic and DMs, but struggling to convert them at premium prices</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i class="fas fa-check text-[#52A321] mt-1 mr-3"></i>
-                                    <span class="text-sm md:text-base text-[#333] font-bold">Those who want to attract high-budget, premium brides</span>
+                                    <i class="fas fa-check text-[#EAB308] mt-1 mr-2 text-xs"></i>
+                                    <span class="text-xs md:text-sm text-gray-300 font-bold">MUAs charging or wanting to charge ₹20,000 to ₹1 Lakh+ per bridal booking</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <i class="fas fa-check text-[#52A321] mt-1 mr-3"></i>
-                                    <span class="text-sm md:text-base text-[#333] font-bold">Action-takers ready to scale beyond their current revenue</span>
+                                    <i class="fas fa-check text-[#EAB308] mt-1 mr-2 text-xs"></i>
+                                    <span class="text-xs md:text-sm text-gray-300 font-bold">Business owners ready to build automated, highly professional booking systems</span>
                                 </li>
                             </ul>
                         </div>
@@ -279,191 +356,214 @@
         </div>
     </section>
 
-    <!-- Value Stack (Matched to Reference) -->
-    <section class="py-12 md:py-20 bg-white">
+    <!-- Value Stack Section -->
+    <section class="py-16 md:py-24 bg-[#0F0F12]">
         <div class="container mx-auto px-4 max-w-3xl">
-            <h2 data-aos="fade-up" class="font-sans text-2xl md:text-4xl font-black uppercase text-[#111] text-center tracking-tight mb-2">
-                HERE'S WHAT YOU'RE GETTING TODAY
+            <h2 data-aos="fade-up" class="font-sans text-2xl md:text-4xl font-black uppercase text-white text-center tracking-tight mb-2 font-serif">
+                WHAT YOU SECURE IN THE DIAGNOSIS SESSION
             </h2>
-            <p data-aos="fade-up" class="text-center text-sm md:text-base font-bold text-[#333] mb-8">
-                A personalized scaling session plan, exactly tailored to your bridal business.
+            <p data-aos="fade-up" class="text-center text-xs md:text-sm font-bold text-gray-400 mb-12 uppercase tracking-wider">
+                A highly personalized scaling roadmap, built specifically for your makeover business.
             </p>
             
-            <div data-aos="fade-up" class="space-y-5 mb-10">
+            <div data-aos="fade-up" class="space-y-5 mb-12">
                 
                 <!-- Item 1 -->
-                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-dashed border-gray-200 pb-3 gap-1">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-dashed border-[#24242D] pb-4 gap-1">
                     <div class="flex items-start gap-3 max-w-[80%]">
-                        <i class="fas fa-check-circle text-[#52A321] mt-1"></i>
+                        <i class="fas fa-check-circle text-[#EAB308] mt-1 text-sm md:text-base"></i>
                         <div>
-                            <h4 class="font-black text-[#111] text-sm md:text-base">1-on-1 Bridal Business Diagnosis Call</h4>
-                            <p class="text-xs text-gray-500 font-medium">Uncover your exact scaling bottlenecks</p>
+                            <h4 class="font-black text-white text-xs md:text-sm uppercase tracking-wide">1-on-1 Bridal Business Diagnosis Call</h4>
+                            <p class="text-[11px] md:text-xs text-gray-400 font-semibold">We analyze your booking history and identify key structural breaks.</p>
                         </div>
                     </div>
-                    <div class="text-[#333] font-bold text-sm sm:text-base whitespace-nowrap self-start sm:self-auto ml-7 sm:ml-0">₹7,000 Value</div>
+                    <div class="text-[#EAB308] font-extrabold text-xs md:text-sm whitespace-nowrap self-start sm:self-auto ml-6 sm:ml-0">₹7,000 Value</div>
                 </div>
                 
                 <!-- Item 2 -->
-                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-dashed border-gray-200 pb-3 gap-1">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-dashed border-[#24242D] pb-4 gap-1">
                     <div class="flex items-start gap-3 max-w-[80%]">
-                        <i class="fas fa-check-circle text-[#52A321] mt-1"></i>
+                        <i class="fas fa-check-circle text-[#EAB308] mt-1 text-sm md:text-base"></i>
                         <div>
-                            <h4 class="font-black text-[#111] text-sm md:text-base">DM-To-Booking Conversion Blueprint</h4>
-                            <p class="text-xs text-gray-500 font-medium">Step-by-step system to convert existing leads</p>
+                            <h4 class="font-black text-white text-xs md:text-sm uppercase tracking-wide">Complete Bridal Scaling Chain Audit</h4>
+                            <p class="text-[11px] md:text-xs text-gray-400 font-semibold">In-depth leak analysis across positioning, offers, quality control, and DM structure.</p>
                         </div>
                     </div>
-                    <div class="text-[#333] font-bold text-sm sm:text-base whitespace-nowrap self-start sm:self-auto ml-7 sm:ml-0">₹9,000 Value</div>
+                    <div class="text-[#EAB308] font-extrabold text-xs md:text-sm whitespace-nowrap self-start sm:self-auto ml-6 sm:ml-0">₹9,000 Value</div>
                 </div>
 
                 <!-- Item 3 -->
-                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-dashed border-gray-200 pb-3 gap-1">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-dashed border-[#24242D] pb-4 gap-1">
                     <div class="flex items-start gap-3 max-w-[80%]">
-                        <i class="fas fa-check-circle text-[#52A321] mt-1"></i>
+                        <i class="fas fa-check-circle text-[#EAB308] mt-1 text-sm md:text-base"></i>
                         <div>
-                            <h4 class="font-black text-[#111] text-sm md:text-base">Premium MUA Positioning Strategy</h4>
-                            <p class="text-xs text-gray-500 font-medium">Command higher prices instantly without pushback</p>
+                            <h4 class="font-black text-white text-xs md:text-sm uppercase tracking-wide">Premium Bride Positioning Breakdown</h4>
+                            <p class="text-[11px] md:text-xs text-gray-400 font-semibold">Identify exactly why luxury brides choose your competitors—and how to command authority.</p>
                         </div>
                     </div>
-                    <div class="text-[#333] font-bold text-sm sm:text-base whitespace-nowrap self-start sm:self-auto ml-7 sm:ml-0">₹5,000 Value</div>
+                    <div class="text-[#EAB308] font-extrabold text-xs md:text-sm whitespace-nowrap self-start sm:self-auto ml-6 sm:ml-0">₹5,000 Value</div>
                 </div>
 
                 <!-- Item 4 -->
-                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-dashed border-gray-200 pb-3 gap-1">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-dashed border-[#24242D] pb-4 gap-1">
                     <div class="flex items-start gap-3 max-w-[80%]">
-                        <i class="fas fa-check-circle text-[#52A321] mt-1"></i>
+                        <i class="fas fa-check-circle text-[#EAB308] mt-1 text-sm md:text-base"></i>
                         <div>
-                            <h4 class="font-black text-[#111] text-sm md:text-base">Meta Ads & Reel Strategy Audit</h4>
-                            <p class="text-xs text-gray-500 font-medium">Fixing what's broken in your current Instagram marketing</p>
+                            <h4 class="font-black text-white text-xs md:text-sm uppercase tracking-wide">Ads & Creative Conversion Review</h4>
+                            <p class="text-[11px] md:text-xs text-gray-400 font-semibold">Stop burning money on random reels boosts. We audit hooks, messaging, and target quality.</p>
                         </div>
                     </div>
-                    <div class="text-[#333] font-bold text-sm sm:text-base whitespace-nowrap self-start sm:self-auto ml-7 sm:ml-0">₹4,000 Value</div>
+                    <div class="text-[#EAB308] font-extrabold text-xs md:text-sm whitespace-nowrap self-start sm:self-auto ml-6 sm:ml-0">₹4,000 Value</div>
                 </div>
 
                 <!-- Item 5 -->
-                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b-2 border-dashed border-gray-200 pb-3 gap-1">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-dashed border-[#24242D] pb-4 gap-1">
                     <div class="flex items-start gap-3 max-w-[80%]">
-                        <i class="fas fa-check-circle text-[#52A321] mt-1"></i>
+                        <i class="fas fa-check-circle text-[#EAB308] mt-1 text-sm md:text-base"></i>
                         <div>
-                            <h4 class="font-black text-[#111] text-sm md:text-base">The Price-Shopper Eliminator Scripts</h4>
-                            <p class="text-xs text-gray-500 font-medium">WhatsApp scripts to filter time-wasters politely</p>
+                            <h4 class="font-black text-white text-xs md:text-sm uppercase tracking-wide">The Price-Shopper Filter Protocol</h4>
+                            <p class="text-[11px] md:text-xs text-gray-400 font-semibold">We reveal how to filter out bargain hunters on WhatsApp and stop manual follow-up fatigue.</p>
                         </div>
                     </div>
-                    <div class="text-[#333] font-bold text-sm sm:text-base whitespace-nowrap self-start sm:self-auto ml-7 sm:ml-0">₹12,000 Value</div>
+                    <div class="text-[#EAB308] font-extrabold text-xs md:text-sm whitespace-nowrap self-start sm:self-auto ml-6 sm:ml-0">₹5,000 Value</div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-dashed border-[#24242D] pb-4 gap-1">
+                    <div class="flex items-start gap-3 max-w-[80%]">
+                        <i class="fas fa-check-circle text-[#EAB308] mt-1 text-sm md:text-base"></i>
+                        <div>
+                            <h4 class="font-black text-white text-xs md:text-sm uppercase tracking-wide">90-Day Revenue Scaling Direction</h4>
+                            <p class="text-[11px] md:text-xs text-gray-400 font-semibold">Immediate, action-oriented clarity on what to fix first to scale predictably.</p>
+                        </div>
+                    </div>
+                    <div class="text-[#EAB308] font-extrabold text-xs md:text-sm whitespace-nowrap self-start sm:self-auto ml-6 sm:ml-0">₹7,000 Value</div>
                 </div>
             </div>
 
-            <!-- Total Box -->
-            <div data-aos="zoom-in" class="bg-[#FFFBEA] border-2 border-[#FFD700] p-6 text-center shadow-sm max-w-md mx-auto mb-10">
-                <p class="text-[#333] font-bold text-sm uppercase mb-1">Total Value: ₹37,000</p>
-                <h3 class="text-[#D92D20] text-3xl md:text-4xl font-black uppercase mb-4">Today Only: ₹37</h3>
-                <a href="#booking-form" class="inline-block w-full bg-[#52A321] text-white px-4 py-3 text-[16px] md:text-xl font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all">
+            <!-- Price Drop Box -->
+            <div data-aos="zoom-in" class="bg-[#121216] border-2 border-[#EAB308] p-6 text-center shadow-2xl max-w-md mx-auto mb-12 rounded">
+                <p class="text-gray-400 font-black text-xs uppercase mb-1 tracking-wider">TOTAL VALUE: ₹37,000</p>
+                <div class="text-gray-600 font-black line-through text-lg mb-1">₹37,000</div>
+                <h3 class="text-[#EF4444] text-4xl md:text-5xl font-black uppercase mb-4 leading-none tracking-tight">TODAY: ₹37</h3>
+                <a href="#booking-form" class="inline-block w-full bg-[#52A321] hover:bg-[#438923] text-white px-4 py-3.5 text-sm md:text-base font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all tracking-wider">
                     LOCK MY ₹37 SLOT
                 </a>
+                <p class="text-[10px] text-gray-500 font-bold mt-3 uppercase tracking-wider">THIS IS A DIRECT, LIVE 1-ON-1 SESSION — NOT A GENERIC RECORDED WEBINAR.</p>
             </div>
 
             <!-- Booking Form Container -->
-            <div id="booking-form" data-aos="fade-up" class="border-[3px] border-gray-200 p-6 md:p-8 rounded-sm bg-white shadow-lg">
-                <h3 class="font-black text-xl md:text-2xl text-center uppercase text-[#111] mb-2">YOUR INVESTMENT TODAY: ₹37 ONLY</h3>
-                <p class="text-center text-xs md:text-sm font-bold text-gray-500 mb-6 uppercase tracking-wide">Fill the form below to lock your strategy session</p>
+            <div id="booking-form" data-aos="fade-up" class="border-[3px] border-[#EAB308] p-6 md:p-8 rounded bg-[#121216] shadow-[0_0_50px_rgba(234,179,8,0.1)]">
+                <h3 class="font-black text-lg md:text-2xl text-center uppercase text-white mb-1 tracking-tight">RESERVE YOUR STRATEGY CALL SLOT</h3>
+                <p class="text-center text-xs font-bold text-[#EAB308] mb-8 uppercase tracking-wider">Only for bridal makeover brands serious about scaling properly.</p>
                 
-                <form class="space-y-4 max-w-md mx-auto">
+                <form class="space-y-5 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Inquiry submitted successfully! We will contact you via WhatsApp shortly.');">
                     <div>
-                        <label class="block text-xs font-bold text-[#111] mb-1">Name *</label>
-                        <input type="text" placeholder="Your Full Name" class="w-full border border-gray-300 p-3 text-sm focus:outline-none focus:border-[#52A321]" required>
+                        <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">Name of MUA / Studio Owner *</label>
+                        <input type="text" placeholder="Enter your full name" class="w-full bg-[#0A0A0C] border border-[#24242D] text-white p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-[#111] mb-1">Phone/Mobile *</label>
-                        <input type="tel" placeholder="Mobile Number" class="w-full border border-gray-300 p-3 text-sm focus:outline-none focus:border-[#52A321]" required>
+                        <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">WhatsApp Mobile *</label>
+                        <input type="tel" placeholder="Enter WhatsApp active number" class="w-full bg-[#0A0A0C] border border-[#24242D] text-white p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-[#111] mb-1">Email *</label>
-                        <input type="email" placeholder="Email Address" class="w-full border border-gray-300 p-3 text-sm focus:outline-none focus:border-[#52A321]" required>
+                        <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">Instagram Profile Handle *</label>
+                        <input type="text" placeholder="@yourbrandname (Required for Portfolio Audit)" class="w-full bg-[#0A0A0C] border border-[#24242D] text-white p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
                     </div>
-                    <button type="submit" class="w-full bg-[#52A321] text-white px-4 py-4 text-[18px] md:text-xl font-black uppercase rounded shadow-[0_4px_0_#387A13] hover:translate-y-1 hover:shadow-none transition-all mt-4">
+                    <div>
+                        <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">Average Bridal Package Rate *</label>
+                        <select class="w-full bg-[#0A0A0C] border border-[#24242D] text-gray-400 p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
+                            <option value="">Select your rate range</option>
+                            <option value="under-15k">Under ₹15,000</option>
+                            <option value="15k-30k">₹15,000 - ₹30,000</option>
+                            <option value="30k-50k">₹30,000 - ₹50,000</option>
+                            <option value="above-50k">Above ₹50,000 (Premium/Luxury)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-[#52A321] text-white px-4 py-4 text-sm md:text-base font-black uppercase rounded shadow-[0_4px_0_#387A13] hover:translate-y-1 hover:shadow-none transition-all mt-6 tracking-widest">
                         RESERVE MY SLOT FOR ₹37
                     </button>
-                    <p class="text-center text-[10px] text-gray-400 mt-2">100% Secure Checkout</p>
+                    <p class="text-center text-[10px] text-gray-500 font-semibold uppercase mt-3 tracking-wider">SSL Secure Checkout &bull; Your data is safely audit-restricted</p>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Important Notice Block -->
-    <section class="bg-[#2D3748] py-8 text-center px-4">
-        <h3 class="text-white font-black uppercase text-xl md:text-2xl tracking-wide mb-3">IMPORTANT</h3>
-        <p class="text-gray-300 font-bold text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
-            This is NOT a recorded Webinar or a generic Pitch Fest. <br class="hidden md:block"/>
-            This is a highly personalized 1-on-1 Zoom session where we tear down your current bridal business process, identify the leaks, and give you the exact blueprint to fix them.
+    <section class="bg-[#121216] py-10 text-center px-4 border-t border-[#24242D]">
+        <h3 class="text-[#EAB308] font-black uppercase text-base md:text-lg tracking-widest mb-3">IMPORTANT REQUIREMENT FOR APPLICANTS</h3>
+        <p class="text-gray-300 font-bold text-xs md:text-sm max-w-2xl mx-auto leading-relaxed">
+            This is NOT a course, a theoretical masterclass, or a generic marketing sales pitch. <br class="hidden md:block"/>
+            Because we build custom, high-converting WhatsApp scripts & pre-qualification frameworks live on the call, you MUST have an active bridal portfolio on Instagram with high-quality visual content.
         </p>
     </section>
 
     <!-- Mission Block -->
-    <section class="bg-white py-8 border-b-2 border-gray-100 text-center px-4">
-        <h3 class="text-[#111] font-black uppercase text-xl md:text-2xl tracking-wide mb-2">OUR MISSION IS SIMPLE</h3>
-        <p class="text-[#333] font-bold text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
-            Help Bridal Makeup Artists & Studios Stop Competing On Price—And Start Converting Inquiries Into High-Paying Brides & Predictable Revenue.
+    <section class="bg-[#0A0A0C] py-12 border-t border-b border-[#24242D] text-center px-4">
+        <h3 class="text-white font-black uppercase text-base md:text-xl tracking-widest mb-3 font-serif">OUR MISSION IS SIMPLE</h3>
+        <p class="text-[#EAB308] font-black text-xs md:text-sm max-w-2xl mx-auto leading-relaxed uppercase tracking-wider">
+            We help premium bridal makeover studios and artists stop manually chasing price-shoppers — and build automated, predictable systems to secure high-value wedding bookings.
         </p>
     </section>
 
     <!-- Scarcity Block -->
-    <section class="bg-[#1A202C] py-10 md:py-12 text-center px-4">
-        <div class="max-w-3xl mx-auto">
-            <h3 class="text-[#FFD700] font-black uppercase text-2xl md:text-4xl tracking-tight mb-4 leading-tight">
+    <section class="bg-[#0F0F12] py-12 text-center px-4 border-b border-[#24242D]">
+        <div class="max-w-2xl mx-auto">
+            <h3 class="text-[#EAB308] font-black uppercase text-lg md:text-2xl tracking-widest mb-3">
                 ONLY 3 SLOTS AVAILABLE THIS WEEK
             </h3>
-            <p class="text-white font-medium text-sm md:text-base mb-6">
-                Because this is a 1-on-1 intensive strategy session, we only have capacity for 3 bridal brands per week. <br class="hidden md:block"/>
-                Once slots fill up, registration closes.
+            <p class="text-gray-400 font-medium text-xs md:text-sm mb-6 leading-relaxed">
+                Because this is a completely customized, live 1-on-1 strategy call with our top consultants, we only have the capacity to audit 3 bridal brands per week. Once slots fill up, registration will immediately close until the next Muhurtham peak.
             </p>
-            <a href="#booking-form" class="inline-block w-full max-w-[300px] bg-[#52A321] text-white px-4 py-3 text-[16px] md:text-xl font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all">
+            <a href="#booking-form" class="inline-block w-full max-w-[280px] bg-[#52A321] hover:bg-[#438923] text-white px-4 py-3 text-xs md:text-sm font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all tracking-wider">
                 LOCK MY SLOT NOW
             </a>
         </div>
     </section>
 
-    <!-- Reserve Before Slots Fill Up -->
-    <section class="bg-white py-10 md:py-12 text-center px-4 border-b-[6px] border-gray-100">
-        <h3 class="text-[#111] font-black uppercase text-xl md:text-3xl tracking-tight mb-2">
-            RESERVE YOUR ₹37 SESSION <br class="md:hidden"/> BEFORE SLOTS FILL UP
+    <!-- Reserve Before Slots Fill Up Block -->
+    <section class="bg-[#0A0A0C] py-12 text-center px-4 border-b border-[#24242D]">
+        <h3 class="text-white font-black uppercase text-base md:text-2xl tracking-tight mb-2">
+            RESERVE YOUR ₹37 SESSION <br class="md:hidden"/> BEFORE CALENDAR SLOTS FILL UP
         </h3>
-        <p class="text-[#333] font-bold text-sm mb-6">Click Below To Register</p>
-        <a href="#booking-form" class="inline-block w-full max-w-[380px] bg-[#52A321] text-white px-4 py-4 text-[15px] md:text-lg font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all">
-            YES - I WANT MORE BRIDAL BOOKINGS
+        <p class="text-gray-500 font-bold text-xs mb-6 uppercase tracking-wider">Click Below To Lock Your Booking Security</p>
+        <a href="#booking-form" class="inline-block w-full max-w-[340px] bg-[#52A321] hover:bg-[#438923] text-white px-4 py-3.5 text-xs md:text-sm font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all tracking-wider">
+            YES - I WANT PREMIUM BRIDAL BOOKINGS
         </a>
     </section>
 
     <!-- Don't Wait Warning Block -->
-    <section class="bg-[#FAFAFA] py-12 text-center px-4">
+    <section class="bg-[#121216] py-16 text-center px-4">
         <div class="max-w-3xl mx-auto">
-            <div class="inline-block bg-[#D92D20] px-4 py-2 mb-4">
-                <h3 class="text-white font-black uppercase text-lg md:text-2xl m-0 tracking-wide">
-                    DON'T WAIT UNTIL NEXT MONTH...
+            <div class="inline-block bg-[#EF4444] px-4 py-1.5 mb-4">
+                <h3 class="text-white font-black uppercase text-xs md:text-sm m-0 tracking-widest">
+                    DON'T WAIT UNTIL NEXT WEDDING SEASON...
                 </h3>
             </div>
-            <p class="text-[#111] font-black text-sm md:text-lg mb-2">
-                Trying To Guess Why Premium Brides Are Booking Your Competitors Instead Of You.
+            <p class="text-white font-black text-sm md:text-lg mb-3 uppercase tracking-wide">
+                To guess why premium brides choose your competitors instead of booking your dates.
             </p>
-            <p class="text-[#333] font-medium text-sm md:text-base mb-8">
-                Take the guesswork out of scaling. Let us show you exactly what's broken in your booking process and how to fix it immediately.
+            <p class="text-gray-400 font-medium text-xs md:text-sm mb-8 leading-relaxed max-w-2xl mx-auto">
+                Take the guesswork out of your growth. Let us show you exactly what's broken inside your DM inquiries sequence and how to fix it immediately.
             </p>
-            <a href="#booking-form" class="inline-block w-full max-w-[350px] bg-[#52A321] text-white px-4 py-3 text-[16px] md:text-lg font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all">
+            <a href="#booking-form" class="inline-block w-full max-w-[320px] bg-[#52A321] hover:bg-[#438923] text-white px-4 py-3 text-xs md:text-sm font-black uppercase rounded shadow-[0_4px_0_#387A13] active:translate-y-1 active:shadow-none transition-all tracking-wider">
                 RESERVE MY 1-ON-1 SESSION NOW
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#111] py-10 text-center px-4">
+    <footer class="bg-[#0A0A0C] py-12 text-center px-4 border-t border-[#24242D]">
         <div class="container mx-auto max-w-4xl">
-            <p class="text-gray-400 text-xs md:text-sm font-medium mb-4 leading-relaxed">
-                Disclaimer: The results discussed in this session are not guaranteed. Every business is different, and results depend on your execution, market, and work ethic. This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+            <p class="text-gray-500 text-[10px] md:text-xs font-semibold mb-6 leading-relaxed uppercase tracking-wider">
+                Disclaimer: The results discussed in this session are not guaranteed. Every makeover studio and artist possesses different portfolios, experience, and local demand parameters. This site is not a part of the Facebook website or Meta Platforms, Inc. Additionally, This site is NOT endorsed by Meta in any way. FACEBOOK and INSTAGRAM are trademarks of META, Inc.
             </p>
-            <div class="flex justify-center gap-4 text-xs font-bold text-gray-500 uppercase tracking-wider">
+            <div class="flex justify-center gap-4 text-[10px] font-black text-gray-500 uppercase tracking-widest mb-6">
                 <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
                 <span>|</span>
                 <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
             </div>
-            <p class="text-gray-600 text-xs mt-4">
+            <p class="text-gray-600 text-[10px] uppercase font-bold tracking-wider">
                 &copy; 2026 Bridal Scaling Systems. All rights reserved.
             </p>
         </div>
