@@ -60,6 +60,11 @@
             backdrop-filter: blur(12px);
             border: 1px solid rgba(234, 179, 8, 0.1);
         }
+
+        /* Prevent scrolling when modal is active */
+        .no-scroll {
+            overflow: hidden;
+        }
     </style>
 </head>
 <body class="font-sans relative overflow-x-hidden">
@@ -84,7 +89,7 @@
                 ONLY 3 SLOTS AVAILABLE THIS WEEK
             </div>
             
-            <!-- Headline (Perfect Mobile Alignment with Requested Text Structure) -->
+            <!-- Headline -->
             <h1 data-aos="fade-up" class="font-sans text-[23px] min-[375px]:text-[25px] sm:text-[40px] md:text-[50px] font-black leading-[1.15] text-white uppercase tracking-tight mb-6">
                 TAP HIGH-PAYING<br>
                 <span class="text-[#EAB308]">BRIDAL LEADS</span><br>
@@ -93,7 +98,7 @@
                 CONVERSION FUNNEL
             </h1>
             
-            <!-- Bullet points (Left-aligned within a centered desktop container) -->
+            <!-- Bullet points -->
             <div data-aos="fade-up" data-aos-delay="100" class="max-w-xl mx-auto text-left mb-8 space-y-4">
                 <div class="flex items-start">
                     <i class="far fa-check-square text-[#EAB308] mt-1 mr-3 text-base md:text-lg shrink-0"></i>
@@ -109,15 +114,15 @@
                 </div>
             </div>
             
-            <!-- Pricing Block (Optimized Double-Column Grid & Stack Alignment) -->
-            <div data-aos="zoom-in" data-aos-delay="200" class="flex items-center justify-center gap-5 sm:gap-8 mb-8 select-none">
+            <!-- Pricing Block -->
+            <div data-aos="zoom-in" data-aos-delay="200" class="flex items-center justify-center gap-4 sm:gap-6 mb-8 select-none">
                 <!-- Left Side: Strikethrough Value -->
-                <span class="text-gray-500 line-through font-black text-[24px] sm:text-4xl leading-none">₹37,000</span>
+                <span class="text-gray-500 line-through font-black text-[22px] sm:text-[28px] md:text-4xl leading-none">₹37,000</span>
                 
-                <!-- Right Side: Vertically Stacked ONLY and ₹37 -->
+                <!-- Right Side: Stacked ONLY and ₹37 -->
                 <div class="flex flex-col items-start leading-none text-left">
-                    <span class="text-white font-black text-[24px] sm:text-3xl tracking-tight uppercase">ONLY</span>
-                    <span class="text-white font-black text-[56px] sm:text-[76px] tracking-tighter leading-none mt-1">₹37</span>
+                    <span class="text-white font-black text-[18px] sm:text-[24px] md:text-3xl tracking-tight uppercase">ONLY</span>
+                    <span class="text-white font-black text-[50px] sm:text-[62px] md:text-[76px] tracking-tighter leading-none mt-0.5">₹37</span>
                 </div>
             </div>
             
@@ -460,37 +465,49 @@
 
             <!-- Booking Form Container -->
             <div id="booking-form" data-aos="fade-up" class="border-[3px] border-[#EAB308] p-6 md:p-8 rounded bg-[#121216] shadow-[0_0_50px_rgba(234,179,8,0.1)]">
-                <h3 class="font-black text-lg md:text-2xl text-center uppercase text-white mb-1 tracking-tight">RESERVE YOUR STRATEGY CALL SLOT</h3>
-                <p class="text-center text-xs font-bold text-[#EAB308] mb-8 uppercase tracking-wider">Only for bridal makeover brands serious about scaling properly.</p>
-                
-                <form class="space-y-5 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Inquiry submitted successfully! We will contact you via WhatsApp shortly.');">
-                    <div>
-                        <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">Name of MUA / Studio Owner *</label>
-                        <input type="text" placeholder="Enter your full name" class="w-full bg-[#0A0A0C] border border-[#24242D] text-white p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
-                    </div>
-                    <div>
-                        <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">WhatsApp Mobile *</label>
-                        <input type="tel" placeholder="Enter WhatsApp active number" class="w-full bg-[#0A0A0C] border border-[#24242D] text-white p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
-                    </div>
-                    <div>
-                        <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">Instagram Profile Handle *</label>
-                        <input type="text" placeholder="@yourbrandname (Required for Portfolio Audit)" class="w-full bg-[#0A0A0C] border border-[#24242D] text-white p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
-                    </div>
-                    <div>
-                        <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">Average Bridal Package Rate *</label>
-                        <select class="w-full bg-[#0A0A0C] border border-[#24242D] text-gray-400 p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
-                            <option value="">Select your rate range</option>
-                            <option value="under-15k">Under ₹15,000</option>
-                            <option value="15k-30k">₹15,000 - ₹30,000</option>
-                            <option value="30k-50k">₹30,000 - ₹50,000</option>
-                            <option value="above-50k">Above ₹50,000 (Premium/Luxury)</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="w-full bg-[#52A321] text-white px-4 py-4 text-sm md:text-base font-black uppercase rounded shadow-[0_4px_0_#387A13] hover:translate-y-1 hover:shadow-none transition-all mt-6 tracking-widest">
-                        RESERVE MY SLOT FOR ₹37
-                    </button>
-                    <p class="text-center text-[10px] text-gray-500 font-semibold uppercase mt-3 tracking-wider">SSL Secure Checkout &bull; Your data is safely audit-restricted</p>
-                </form>
+                <!-- Success Message Modal Area (Alternative to generic alert alerts) -->
+                <div id="form-success-message" class="hidden text-center py-8">
+                    <i class="fas fa-check-circle text-[#52A321] text-6xl mb-4"></i>
+                    <h3 class="font-black text-2xl text-white uppercase mb-2">Slot Application Received!</h3>
+                    <p class="text-[#EAB308] font-bold text-xs md:text-sm mb-4 uppercase tracking-wider">Only 3 Slots Remaining For This Week</p>
+                    <p class="text-gray-300 text-xs md:text-sm max-w-sm mx-auto leading-relaxed">
+                        We have successfully locked your registration. Our team will audit your Instagram portfolio and contact you via WhatsApp shortly to coordinate your 1-on-1 Strategy Zoom session.
+                    </p>
+                </div>
+
+                <div id="form-content">
+                    <h3 class="font-black text-lg md:text-2xl text-center uppercase text-white mb-1 tracking-tight">RESERVE YOUR STRATEGY CALL SLOT</h3>
+                    <p class="text-center text-xs font-bold text-[#EAB308] mb-8 uppercase tracking-wider">Only for bridal makeover brands serious about scaling properly.</p>
+                    
+                    <form class="space-y-5 max-w-md mx-auto" onsubmit="handleFormSubmit(event)">
+                        <div>
+                            <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">Name of MUA / Studio Owner *</label>
+                            <input type="text" placeholder="Enter your full name" class="w-full bg-[#0A0A0C] border border-[#24242D] text-white p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">WhatsApp Mobile *</label>
+                            <input type="tel" placeholder="Enter WhatsApp active number" class="w-full bg-[#0A0A0C] border border-[#24242D] text-white p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">Instagram Profile Handle *</label>
+                            <input type="text" placeholder="@yourbrandname (Required for Portfolio Audit)" class="w-full bg-[#0A0A0C] border border-[#24242D] text-white p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-black text-gray-400 uppercase tracking-wider mb-2">Average Bridal Package Rate *</label>
+                            <select class="w-full bg-[#0A0A0C] border border-[#24242D] text-gray-400 p-3.5 text-sm rounded focus:outline-none focus:border-[#EAB308] transition-colors" required>
+                                <option value="">Select your rate range</option>
+                                <option value="under-15k">Under ₹15,000</option>
+                                <option value="15k-30k">₹15,000 - ₹30,000</option>
+                                <option value="30k-50k">₹30,000 - ₹50,000</option>
+                                <option value="above-50k">Above ₹50,000 (Premium/Luxury)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-[#52A321] text-white px-4 py-4 text-sm md:text-base font-black uppercase rounded shadow-[0_4px_0_#387A13] hover:translate-y-1 hover:shadow-none transition-all mt-6 tracking-widest">
+                            RESERVE MY SLOT FOR ₹37
+                        </button>
+                        <p class="text-center text-[10px] text-gray-500 font-semibold uppercase mt-3 tracking-wider">SSL Secure Checkout &bull; Your data is safely audit-restricted</p>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -575,7 +592,7 @@
         </div>
     </footer>
 
-    <!-- AOS Animation Init -->
+    <!-- AOS Animation Init & Success Modal Callback -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -584,6 +601,14 @@
             duration: 800,
             easing: 'ease-out-cubic',
         });
+
+        // Safe custom success handler replacing legacy native browser alert() triggers
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            document.getElementById('form-content').classList.add('hidden');
+            document.getElementById('form-success-message').classList.remove('hidden');
+            document.getElementById('booking-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
     </script>
 </body>
 </html>
